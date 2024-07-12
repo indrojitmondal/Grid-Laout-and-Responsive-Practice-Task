@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+
+    <style>
+        .container{
+            width: 700px;
+            height: 300px;
+            border: 2px solid blue;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            
+        }
+        .left{
+            width: 40%;
+            height: 300px;
+            border: 2px solid red;
+            
+        }
+        .right{
+            width: 60%; 
+            height: 300px;
+            border: 2px solid green;
+        }
+
+        @media screen and (max-width: 900px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Design a responsive flex layout</h1>
+    <div class="container">
+        <div class="left">
+
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</body>
+</html>
